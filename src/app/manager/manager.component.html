@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{employee.preferredFullName}}</h3>
+      </div>
+      <div class="panel-body">
+  
+        <div class="col-xs-10">
+  
+          <div class="row vertical-align">
+  
+            <div class="col-xs-4">
+              <img class="imageClass rounded-circle" [src]="employee.photoPath" />
+            </div>
+            <div class="col-xs-8" style="padding-left: 5%;">
+  
+              <div class="row">
+                <div class="col-xs-6">
+                  userId
+                </div>
+                <div class="col-xs-6">
+                <b>: {{employee.userId}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  jobTitleName
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.jobTitleName}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  firstName
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.firstName}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  lastName
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.lastName}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  employeeCode
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.employeeCode}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  region
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.region}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  phoneNumber
+                </div>
+                <div class="col-xs-6">
+                  <b>: {{employee.phoneNumber}}</b>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  emailAddress
+                </div>
+                <div class="col-xs-6">
+                  : <b>{{employee.emailAddress}}</b>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,24 @@
+
+  <div class="container">
+    <h3 style="text-align: center" class="mt-3"> My Organization Directory</h3>
+    
+    <input type="text" [(ngModel)]="emailAddress" width="60%" class="form-control form-rounded rounded"
+      placeholder="Search By Employee">
+    <br />
+    <div class="divTable" >
+      <div class="divTableHeading">
+        <div class="divTableRow table-primary">
+          <div class="divTableHead">No.</div>
+          <div class="divTableHead">Name</div>
+          <div class="divTableHead">Email</div>
+        </div>
+      </div>
+      <div class="divTableBody">
+        <div class="divTableRow" *ngFor="let employee of employees | customerEmailFilter:emailAddress;let i = index">
+          <div class="divTableCell">{{i+1}}</div>
+          <div class="divTableCell"><a [routerLink]="['/employee',employee.userId]">{{employee.preferredFullName}}</a></div>
+          <div class="divTableCell">{{employee.emailAddress}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
