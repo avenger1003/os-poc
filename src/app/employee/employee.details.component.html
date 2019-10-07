@@ -1,0 +1,206 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+
+      <div class="col-xs-10 left-padding top-margin">
+          <h3 class="panel-title">{{employee.preferredFullName}}</h3>
+        <div class="row">
+
+          <div class="col-xs-4">
+            <img class="imageClass rounded-circle" [src]="employee.photoPath" />
+          </div>
+          <div class="col-xs-8 left-padding">
+
+            <div class="row ">
+              <div class="col-xs-6">
+                userId
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.userId}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                jobTitleName
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.jobTitleName}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                firstName
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.firstName}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                lastName
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.lastName}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                employeeCode
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.employeeCode}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                region
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.region}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                phoneNumber
+              </div>
+              <div class="col-xs-6">
+                <b>: {{employee.phoneNumber}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                emailAddress
+              </div>
+              <div class="col-xs-6">
+                : <b>{{employee.emailAddress}}</b>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Reporting Manager
+              </div>
+              <div class="col-xs-6">
+                <b>:
+
+                  <a href="#" data-toggle="modal" data-target="#myModal">{{employee.reportingManager}}</a>
+                  <!-- <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">{{employee.reportingManager}}</button> -->
+
+                </b>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">{{manager.preferredFullName}}</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="panel panel-primary">
+           
+            <div class="panel-body">
+
+              <div class="col-xs-10">
+
+                <div class="row vertical-align">
+
+                  <div class="col-xs-4">
+                    <img class="imageClass rounded-circle" [src]="employee.photoPath" />
+                  </div>
+                  <div class="col-xs-8" >
+
+                    <div class="row">
+                      <div class="col-xs-6">
+                        userId
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.userId}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        jobTitleName
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.jobTitleName}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        firstName
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.firstName}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        lastName
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.lastName}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        employeeCode
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.employeeCode}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        region
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.region}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        phoneNumber
+                      </div>
+                      <div class="col-xs-6">
+                        <b>: {{manager.phoneNumber}}</b>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        emailAddress
+                      </div>
+                      <div class="col-xs-6">
+                        : <b>{{manager.emailAddress}}</b>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
